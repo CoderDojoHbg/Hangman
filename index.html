@@ -5,24 +5,30 @@
 <head>
 <meta charset="utf-8">
 <title>Hangman</title>
-<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
-<link rel="stylesheet" href="main.css" type="text/css" />
+<!--<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">-->
+<!--<link rel="stylesheet" href="main.css" type="text/css" />-->
 </head>
 
 <body>
 <div id="mainContent">
-<p id="helloText">?</p>
-<button id="clickButton" class="buttonStyle">click me</button>
+<!--<p id="helloText">?</p>
+<button id="clickButton" class="buttonStyle">click me</button>-->
 
-<form id="inputForm" onsubmit="return false;">
-	<input id="writeWord" type="text" />
-	<input type="submit" onclick="inputWrite()" />
+
+<h3>Hangman: Enter Word</h3>
+
+<form id="inputForm">
+	Enter: <input type="text" maxlength="1" name="Word" id="TextId" />
+	<input type="button" onclick="inputWrite()" value="Press">
 </form>
-
+<div id="DisplayWord">
+</div>
 
 </div>
-	
-<script src="app.js"></script>
-	
+
+<script> 
+
+</script>
+	<script src="app.js"></script>
 </body>
 </html>
