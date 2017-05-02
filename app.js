@@ -4,11 +4,16 @@ var myText = document.getElementById("helloText");
 
 
 var inputfroma = document.getElementById('inputForm');
-var secretWord = "AnDyIsZoAwzeomeOMG";
+var secretWord = prompt('What is the guess?');
 var lowSecret = secretWord.toLowerCase();
 var textnode = document.createTextNode("");
 
 var textWhat = "";
+
+inputfroma.addEventListener('submit', function (param) {
+    param.preventDefault();
+    
+});
 
 function ReplaceAtFunc(stringToSearch, index, replacement) {
     var returnString = stringToSearch.substr(0, index) + replacement+ stringToSearch.substr(index + replacement.length);
